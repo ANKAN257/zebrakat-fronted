@@ -6,7 +6,7 @@ function Skillset({ myskills, myexperiences }) {
     <div className="h-screen w-full flex justify-center flex-col md:flex-row">
       {/* Skillset Section */}
       <div className="w-full md:w-1/3 rounded-lg shadow-xl mb-6 md:mb-0">
-        <div className="grid grid-cols-5 gap-16 px-12 py-8">
+        <div className="grid grid-cols-3 gap-16 px-12 py-8">
           {myskills.map((skill, index) => (
             <div key={index} className="transition-all transform hover:scale-110">
               <img
