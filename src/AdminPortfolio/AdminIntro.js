@@ -35,7 +35,7 @@ function AdminIntro() {
         return;
       }
 
-      const response = await axios.put(
+      const response = await axios.post(
         `${process.env.REACT_APP_serverUrl}/api/portfolio/update-intro`,
         formData,
         {
