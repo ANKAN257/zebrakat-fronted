@@ -9,7 +9,7 @@ function MainNavbar() {
          <a href="/"> <h1 className="sm:text-3xl text-white text-xl">MyBlog</h1></a>
         </div>
         <div className="sm:text-xl text-sm h-auto bg-pink-900 text-white  sm:items-center sm:justify-around sm:w-3/5 sm:flex  pl-2 sm:pl-0 ">
-            
+            <h1>blog</h1>
         </div>
       </div>
     </div>
