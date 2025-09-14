@@ -22,7 +22,7 @@ const LogInPage = () => {
     });
   };
 
-  console.log("process.env.REACT_APP_serverUrl:",process.env.REACT_APP_serverUrl);
+  // console.log("process.env.REACT_APP_serverUrl:",process.env.REACT_APP_serverUrl);
   
 
   const handleSubmit = async (e) => {
@@ -47,17 +47,17 @@ const LogInPage = () => {
         }
       );
       // Assuming the token is in the response data
-      console.log("response :::::________  ", response);
+      // console.log("response :::::________  ", response.data);
 
       const accessToken = response.data.accessToken;
       Cookies.set("accessToken", accessToken);
 
-      console.log(
-        "response.data.accessToken::::: -----",
-        response.data.accessToken
-      );
+      // console.log(
+      //   "response.data.accessToken::::: -----",
+      //   response.data.accessToken
+      // );
 
-      console.log("Login successful:", response.data);
+      // console.log("response :", response.data);
       window.alert("Login successful!");
 
       setFormData({

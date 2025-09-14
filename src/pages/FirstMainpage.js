@@ -17,6 +17,8 @@ function Button({ label, bgColor, hoverBgColor, onClick }) {
 
 function FirstMainpage() {
   const [userData, setUserData] = useState(null);
+ 
+  
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
@@ -40,6 +42,9 @@ function FirstMainpage() {
           withCredentials: true, // Include credentials (cookies)
         }
       );
+     
+      console.log("response.data.data:::::",response.data.data);
+      
 
       setUserData(response.data.data); // Assuming the user data is in the "data" field
     } catch (err) {
@@ -66,6 +71,7 @@ function FirstMainpage() {
       fetchUserData();
     }
   }, [navigate]);
+   console.log("userData",userData);
 
   return (
     <div className="bg-custom-blue min-h-screen">
